@@ -5,7 +5,7 @@
 }
 header
 {
-    background-color: rgb(106, 250, 178);
+    background-color: rgb(106, 144, 250);
     height: 112px;
     line-height: 112px;
 }
@@ -43,16 +43,24 @@ header nav ul li a:hover
     
 }
 .img1{
-    background-image:url(..//image/Restaurant\ logo\ design\ free\ template.jpg);
+    background-image:url(..//image/Restaurant\ logo\ design\ free\ template.jpg), linear-gradient(rgba(247, 240, 240, 0.459),rgba(110, 113, 119, 0.096));
     background-size: 100% 100%;
 }
 .slider, .slider ul, .slider ul li
 {
     height: 710px;
     width: 100%;
-    color:rgb(220, 220, 247);
+    color:white;
     text-align: center;
 }
 .slider h2{
     font-weight: bold;
+}
+.slider span
+{
+    color: orange;
+}
+.slider a
+{
+    padding: 10px 14px;
 }
