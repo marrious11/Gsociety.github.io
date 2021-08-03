@@ -1,5 +1,6 @@
 *,html,body
 {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -43,6 +44,7 @@ header nav ul li a:hover
     
 }
 .img1{
+    transition: 0.6s ease;
     background-image:url(..//image/Restaurant\ logo\ design\ free\ template.jpg), linear-gradient(rgba(247, 240, 240, 0.459),rgba(110, 113, 119, 0.096));
     background-size: 100% 100%;
 }
