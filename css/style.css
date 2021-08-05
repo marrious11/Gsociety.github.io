@@ -66,3 +66,8 @@ header nav ul li a:hover
 {
     padding: 10px 14px;
 }
+@media (min-width: 600px) {
+    body{
+        background-color: cornsilk;
+    }
+}
