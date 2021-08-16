@@ -68,6 +68,11 @@ header nav ul li a:hover
 }
 @media (min-width: 600px) {
     body{
-        background-color: cornsilk;
+        background-color: rgb(244, 209, 245);
+    }
+}
+@media (max-width: 599px) {
+    body{
+        background-color: rgba(153, 237, 248, 0.911);
     }
 }
