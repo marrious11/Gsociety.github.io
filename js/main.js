@@ -21,10 +21,10 @@ jQuerry(document).ready(function(){
          },
          pagination:{
              container:".sliderpager",
-             pageAnchorBuilder:false
+             pageAnchorBuilder:true
          }
      });
-
+$enable-graients
 
 
 
