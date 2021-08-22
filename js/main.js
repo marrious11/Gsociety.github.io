@@ -2,13 +2,13 @@
 jQuerry(document).ready(function(){
 
     "use strick";
-     $('#slider-caruosel').caroufredsel({
+     $('#slider-carousel').caroufredsel({
          resposive:true,
          width:'100%',
          circular:true,
          scroll:{
              items:1,
-             duration:500,
+             duration:50,
              pauseOnHover:true
          },
          auto:true,
@@ -17,15 +17,17 @@ jQuerry(document).ready(function(){
                  min:1,
                  max:1
              },
-             height:"variable"
+             height:"100%"
          },
          pagination:{
-             container:".sliderpager",
+             container:"#slider-carousel",
              pageAnchorBuilder:true
          }
      });
-$enable-graients
 
+     index.html.slideshow(".img1");
+     slider-carousel.slideshow(".img2");
+     main.slideshow(".img3");
 
 
 });

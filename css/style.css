@@ -1,14 +1,15 @@
 *,html,body
 {
-    box-sizing: border-box;
+    box-sizing: border;
     margin: 0;
     padding: 0;
 }
 header
 {
-    background-color: rgb(106, 144, 250);
+    background-color: rgb(45, 46, 45);
     height: 112px;
     line-height: 112px;
+    color: rgb(35, 96, 136);
 }
 ul
 {
@@ -20,14 +21,16 @@ ul li
 }
 header nav
 {
-    float: right;
+    float: right right;
+    padding-right: 25%;
 }
 .logo img
 {
-    margin-top: 1px;
-    margin: right 20px; 
-    padding: 5%;
-    
+    margin-top: 15px;
+    margin-right:auto ; 
+    padding: 18px;
+    padding-right: 100px;
+    padding-left: 0px;
 
 }
 header nav ul li a
@@ -43,10 +46,21 @@ header nav ul li a:hover
     color: red;
     
 }
-.img1{
+.img1 {
     transition: 0.6s ease;
-    background-image:url(..//image/allbrght2.jpg), linear-gradient(rgba(10, 10, 10, 0.459),rgba(19, 22, 29, 0.096));
-    background-size: auto;
+    background-image:url(..//image/allbrght3.jpg), linear-gradient(rgba(58, 56, 56, 0.459),rgba(19, 22, 29, 0.096));
+    background-size: 700px 700px;
+}
+.img2 {
+    transition: 0.6s ease;
+    background-image:url(..//image/allbrght2.jpg), linear-gradient(rgba(25, 25, 26, 0.459),rgba(19, 22, 29, 0.096));
+    background-size: auto 5000px 5000px;
+    width: fit-content;
+}
+.img3{
+    transition: 0.6s ease;
+    background-image:url(..//image/allbrght3.jpg), linear-gradient(rgba(88, 83, 88, 0.979),rgba(19, 22, 29, 0.096));
+    background-size: 50px;
 }
 .slider, .slider ul, .slider ul li
 {
@@ -75,4 +89,8 @@ header nav ul li a:hover
     body{
         background-color: rgba(153, 237, 248, 0.911);
     }
+}
+#video{
+    border: dashed solid black;
+    margin-inline-start: auto;
 }
