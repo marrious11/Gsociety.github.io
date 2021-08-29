@@ -3,31 +3,32 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    text-decoration: none;
-  
-
 }
 header
 {
-    background-color: rgb(16, 16, 17);
-    height: auto;
-    line-height: normal;
+    background-color: rgb(106, 144, 250);
+    height: 112px;
+    line-height: 112px;
 }
-
+ul
+{
+    list-style: none;
+}
 ul li
 {
-   list-style: lower-greek; 
-    display: inline;/* to remove bullet point */
+    display: inline-block;
 }
 header nav
 {
     float: right;
-    padding: 25px;
 }
 .logo img
 {
-    margin: auto 10px; 
-    padding: 18px 100px;
+    margin-top: 1px;
+    margin: right 20px; 
+    padding: 5%;
+    
+
 }
 header nav ul li a
 {
@@ -42,27 +43,20 @@ header nav ul li a:hover
     color: red;
     
 }
-.img1 {
+.img1{
     transition: 0.6s ease;
-    background-image:url(..//marrious11.github.io/image/images/mario1.jpg) no-repeat right, linear-gradient(rgba(58, 56, 56, 0.459),rgba(19, 22, 29, 0.096));
-    background-size: 700px 700px;
-    opacity: 100%;
-    color: whitesmoke;
+    background-image:url(..//image/bg-pictures/eagle-wing.jpeg) norepeat center;
+    background-size: auto;
 }
-.img2 {
+.img2{
     transition: 0.6s ease;
-    background-image:url(..//marrious11.github.io/image/images/mario2.jpg) no-repeat right, linear-gradient(rgba(25, 25, 26, 0.459),rgba(19, 22, 29, 0.096));
-    background-size: auto 5000px 5000px;
-    width: fit-content;
-    opacity: 100%;
-    color: whitesmoke;
+    background-image:url(..//image/bg-pictures/sea-horse.jpeg) no repeat center ;
+    background-size: auto;
 }
-.img3{
+img3{
     transition: 0.6s ease;
-    background-image:url(..//image/allbrght3.jpg) no-repeat right, linear-gradient(rgba(88, 83, 88, 0.979),rgba(19, 22, 29, 0.096));
-    background-size: 50px;
-    opacity: 100%;
-    color: whitesmoke;
+    background-image:url(..//image/bg-pictures/stratus.jpeg)no repeat center;
+    background-size: auto;
 }
 .slider, .slider ul, .slider ul li
 {
@@ -72,7 +66,7 @@ header nav ul li a:hover
     text-align: center;
 }
 .slider h2{
-    font-weight:600px;
+    font-weight: bold;
 }
 .slider span
 {

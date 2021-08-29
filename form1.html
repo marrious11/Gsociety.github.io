@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+         /* Form styling */
+    
+    th{
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: left;
+    }
+    body{
+        background-color: rgba(93, 92, 93, 0.966);
+        color: white;
+        font-family: verdana;
+    }
+    </style>
+</head>
+<body>
+    <!-- trying out forms using tables -->
+    <form action="index.html">
+        <table width="700", border="0", align="center", cellpadding="0" cellspacing="5" >
+           <tr>
+            <th width="25%" height="60" >&nbsp;</th> <!-- provides some -->
+            <th>Student Registration Form</th>
+            <th>&nbsp;</th>
+           </tr>
+           <tr>
+               <td><strong>Name:</strong></td>
+               <td> <input name="name" type="text" size="35" required > </td><!-- for the name input field -->
+               <td>&nbsp;</td>
+           </tr>
+           <tr>
+               <td> <strong>DOB:</strong> </td>
+               <td><input type="date" type="number" size="35" required ></td>
+               <td> &nbsp;</td>
+           </tr>
+           <tr>
+               <td><strong>Sex:</strong></td>
+               <td><input type="radio" name="gender"value="male" required >Male
+                <input type="radio" name="gender"value="male" required >Female</td>
+               <td>&nbsp;</td>
+           </tr>
+           <tr>
+               <td><strong>Email:</strong></td>
+               <td><input type="email" name="email" size="35" required ></td>
+               <td>&nbsp;</td>
+           </tr>
+           <tr>
+               <td> <strong>Address:</strong> </td>
+               <td> <input type="text"name="name2" size="35" required > </td>
+               <td>&nbsp;</td>
+           </tr>
+           <tr>
+               <td> <strong>School:</strong> </td>
+               <td>
+                   <select name="slct1" id="slct1" onchange="populate(this.id,'slct2')" >
+                    <option value="">Select...</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Law">Law</option>
+                    <option value="Medicine and health">Medicine and health</option>
+                    <option value="Engineering and Technology">Engineering and Technology</option>
+                    <option value="Management">Management</option>
+                    <option value="Education">Education</option>
+                    <option value="Business and Econs">Business and Econs</option>
+                </select>
+               </td>
+               <td>&nbsp;</td>
+           </tr>
+           <TR>
+            <td><strong>Department:</strong></td>
+            <td><select id="slct2" name="slct2" onchange="populate(this.id,'slct3')" ></select></td>
+            <td>&nbsp;</td>
+           </TR>
+           
+           <TR>
+               <td><strong>Courses:</strong></td>
+               <td><select id="slct3" name="slct3" ></select></td>
+               <td>&nbsp;</td>
+           </TR>
+           <tr>
+            <td><strong>Mobile Number:</strong></td>
+            <td><input type="text" name="Mobile No .name3" size="35"></td>
+            <td>&nbsp;</td>
+           </tr>
+           <tr>
+               <td><input type="reset"></td>
+               <td><input type="submit" onsubmit="alert('Your details have been submitted!')"></td>
+               <td>&nbsp;</td>
+           </tr>
+        </table>
+</form>
+<marquee behavior="blink" direction="">
+    <p style="color: blue;" text-align="center;">UB is a place to be when you are not there!!</p>
+</marquee>
+<!--Js link -->
+<script src="js/script.js" type="text/javascript"></script>
+    
+    <div style="margin-top: 500px;"></div>
+</body>
+</html>
