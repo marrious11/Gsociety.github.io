@@ -3,32 +3,31 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
+  
+
 }
 header
 {
-    background-color: rgb(106, 144, 250);
-    height: 112px;
-    line-height: 112px;
+    background-color: rgb(16, 16, 17);
+    height: auto;
+    line-height: normal;
 }
-ul
-{
-    list-style: none;
-}
+
 ul li
 {
-    display: inline-block;
+   list-style: lower-greek; 
+    display: inline;/* to remove bullet point */
 }
 header nav
 {
     float: right;
+    padding: 25px;
 }
 .logo img
 {
-    margin-top: 1px;
-    margin: right 20px; 
-    padding: 5%;
-    
-
+    margin: auto 10px; 
+    padding: 18px 100px;
 }
 header nav ul li a
 {
@@ -43,10 +42,27 @@ header nav ul li a:hover
     color: red;
     
 }
-.img1{
+.img1 {
     transition: 0.6s ease;
-    background-image:url(..//image/allbrght2.jpg), linear-gradient(rgba(10, 10, 10, 0.459),rgba(19, 22, 29, 0.096));
-    background-size: auto;
+    background-image:url(..//marrious11.github.io/image/images/mario1.jpg) no-repeat right, linear-gradient(rgba(58, 56, 56, 0.459),rgba(19, 22, 29, 0.096));
+    background-size: 700px 700px;
+    opacity: 100%;
+    color: whitesmoke;
+}
+.img2 {
+    transition: 0.6s ease;
+    background-image:url(..//marrious11.github.io/image/images/mario2.jpg) no-repeat right, linear-gradient(rgba(25, 25, 26, 0.459),rgba(19, 22, 29, 0.096));
+    background-size: auto 5000px 5000px;
+    width: fit-content;
+    opacity: 100%;
+    color: whitesmoke;
+}
+.img3{
+    transition: 0.6s ease;
+    background-image:url(..//image/allbrght3.jpg) no-repeat right, linear-gradient(rgba(88, 83, 88, 0.979),rgba(19, 22, 29, 0.096));
+    background-size: 50px;
+    opacity: 100%;
+    color: whitesmoke;
 }
 .slider, .slider ul, .slider ul li
 {
@@ -56,7 +72,7 @@ header nav ul li a:hover
     text-align: center;
 }
 .slider h2{
-    font-weight: bold;
+    font-weight:600px;
 }
 .slider span
 {

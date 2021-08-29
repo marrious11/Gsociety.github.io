@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicons; browser tabs icons -->
+    <link rel="icon" type="image/png" href="image/LogoSize_Favicon.io/logo_size_invert.jpg" sizes="32x32">
+    <title>Slider</title>
+    <style>
+        #slider{
+            overflow: hidden;/* such that the img shld stay within the page */
+        }
+        /* multiple element sector */
+        #slider figure{
+            position: relative;
+            width: 500%;
+            margin: 0px;
+            left: 0px;
+            /* a css3 style anmation */
+            animation: 20s slider infinite;
+        }
+        #slider figure img{
+            float: left;
+            width: 20%;
+        }
+        @keyframes slider{
+            0%{
+                left: 0;
+            }
+            20% {
+                left: 0;
+            }
+            25%{
+                left:-100%;
+            }
+            45%{
+                left:-100%;
+            }
+            50%{
+                left: -200%;
+            }
+            70%{
+                left: -200%;/* for the third img */
+            }
+            75%{
+                left: -300%;
+            }
+            95%{
+                left: -300%;/* we get exactly to the fouth slide */
+
+            }
+            100%{
+                left: -400%;/* for the fith slide */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="slider">
+        <!-- introducing anoda html5 semantic elmt called figure -->
+        <figure>
+            <img src="image/mario2.jpg " alt="">
+            <img src="image/albright1.jpg" alt="">
+            <img src="image/mario2.jpg" alt="">
+            <img src="image/albright1.jpg " alt="">
+            <img src="image/mario1.jpg" alt="">
+        </figure>
+    </div>
+</body>
+</html>
