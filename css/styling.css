@@ -1,9 +1,15 @@
+/* General settings for all my html files */
+
 *,html,body
 {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+/* End of general settings */
+/* -------------------------------------------------------------------------------------------*/
+/* Start of index.html styling */
 header
 {
     background-color: rgb(106, 144, 250);
@@ -43,21 +49,24 @@ header nav ul li a:hover
     color: red;
     
 }
+/* images styling for each slider page */
 .img1{
     transition: 0.6s ease;
-    background-image:url(..//image/bg-pictures/eagle-wing.jpeg) norepeat center;
+    background-image:url(..//images/pitures_of_Me/mario5.jpg) no-repeat center;
     background-size: auto;
 }
 .img2{
     transition: 0.6s ease;
-    background-image:url(..//image/bg-pictures/sea-horse.jpeg) no repeat center ;
+    background-image:url(..//images/sample_bg_pictures/sea-horse.jpeg) no-repeat center ;
     background-size: auto;
 }
 img3{
     transition: 0.6s ease;
-    background-image:url(..//image/bg-pictures/stratus.jpeg)no repeat center;
+    background-image:url(..//images/Restaurant_Sample_images/Restaurant\ logo\ on\ wall.jpg)no-repeat center;
     background-size: auto;
 }
+/* End of images styling for each slider page */
+
 .slider, .slider ul, .slider ul li
 {
     height: 710px;
@@ -86,3 +95,6 @@ img3{
         background-color: rgba(153, 237, 248, 0.911);
     }
 }
+/*End of index.html styling */
+/* -------------------------------------------------------------------------------------------*/
+/* Start of Porfolio.html styling */
