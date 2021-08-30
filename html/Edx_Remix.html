@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en-us" class="wf-ptsans-n4-active wf-ptsans-n7-active wf-active">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvard site</title>
+    <style>
+        :last-child:not(pre){
+            margin-bottom: 0px;
+        }
+        small, .small{
+            font-size: 0.875em;
+        }
+       aside a, aside a:hover, aside button[data-bs-toggle="collapse"], aside button[data-bs-toggle="collapse"]:hover {
+            background-color: inherit;
+            border-color: rgba(255, 255, 255, 0.5);
+            border-top-color: rgba(255, 255, 255, 0.5);
+            border-right-color: rgba(255, 255, 255, 0.5);
+            border-bottom-color: rgba(255, 255, 255, 0.5);
+            border-left-color: rgba(255, 255, 255, 0.5);
+            color: rgb(255, 255, 255);
+}
+        a, .btn-link {
+            text-decoration: none;/* changes text color */
+         }
+        * {
+            word-break: break-word;
+         }
+        *, ::before, ::after {
+            box-sizing: border-box;
+         }
+         a:-webkit-any-link {
+            color: -webkit-link;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        a {
+            color: rgb(165, 28, 48);
+            text-decoration: underline;
+        }
+                /* inherited from aside.col-md */
+        aside {
+            background-color: rgb(165, 28, 48);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 1.125rem;
+        }
+        /* INHERITED FROM DIV.ROW */
+        .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -0.5);
+    margin-left: calc(var(--bs-gutter-x) * -0.5);/* all this div.row stuffshifts theaside nav bar to the left as intended */
+}
+        /* inherited from the body */
+        body {
+    margin: 0px;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html {
+    font-size: 16px;
+}
+        /* inherited from html.wf-ptsans-n4-active.w... */
+        :root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-primary-rgb: 13,110,253;
+    --bs-secondary-rgb: 108,117,125;
+    --bs-success-rgb: 25,135,84;
+    --bs-info-rgb: 13,202,240;
+    --bs-warning-rgb: 255,193,7;
+    --bs-danger-rgb: 220,53,69;
+    --bs-light-rgb: 248,249,250;
+    --bs-dark-rgb: 33,37,41;
+    --bs-white-rgb: 255,255,255;
+    --bs-black-rgb: 0,0,0;
+    --bs-body-rgb: 33,37,41;
+    --bs-font-sans-serif: "PT Sans";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255,255,255,0.15), rgba(255,255,255,0));
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #212529;
+    --bs-body-bg: #fff;
+}
+        /* pseudo ::before element */
+        *, ::before, ::after {
+    box-sizing: border-box;
+}
+        /* pseudo ::aftre element */
+        *, ::before, ::after {
+    box-sizing: border-box;
+}
+    </style>
+</head>
+<body class="">
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-md" style="margin-top: 0px;">
+                <header>
+                    <h1 id="csc-computer-science-university-of-buea">
+                        <a href="https://www.ubuea.com">CSC, Computer Science University of Buea</a>
+                    </h1>
+                    <p>OpenCourseWare</p>
+                    <p>
+                        <a href="" class="pr-1 small">
+                            Donate or support the team 
+                            <i aria-hidden="true" class="fas fa-external-ink-alt ps-2" >
+                                <span class="dashicons dashicons-insert-before"></span>
+                            </i>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://lekujonas.me/">Leku Jonas</a> <br>
+                        <a href="mailto:lekujonas@gmail.com">lekujonas@ubuea.cm</a>
+                    </p>
+                    <a href="https://pokellohazel.me/">Allbright Hazel</a> <br>
+                        <a href="mailto:pokellohazel@gmail.com">pokellohazel@ubuea.cm</a>
+                    <p>
+                        <a href="https://sohmarrious.me/">Soh Marrious</a> <br>
+                        <a href="mailto:sohmarrious@gmail.com">sohmarrious@ubuea.cm</a><br>
+                         <!-- Other social platforms link via wc one can msg me on -->
+                        <a class="mr-1" href="https://github.com/marrious11">
+                            <i aria-hidden="true" class="fab fa-github" title="GitHub">
+                             <!-- was suppose to add a "::before" thing here but i don't how -->
+                            </i> 
+                            <span class="sr-only">GitHub</span>
+                        </a>
+                        <a class="mr-1" href="https://www.facebook.com/Soh Marrious">
+                            <i aria-hidden="true" class="fab fa-facebook-f" title="Facebook">
+                             <!-- was suppose to add a "::before" thing here but i don't how -->
+                            </i> 
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                        <a class="mr-1" href="https://www.linkedin.com/in/sohmarrious/">
+                            <i aria-hidden="true" class="fab fa-linkedin" title="LinkedIn">
+                            <!-- was suppose to add a "::before" thing here but i don't how -->
+                            </i>
+                            <span class="sr-only">LinkedIn</span>
+                        </a>
+                        <a class="mr-1" href="https://www.quora.com/profile/soh-marrious">
+                            <i aria-hidden="true" class="fab fa-quora" title="Quora">
+                            <!-- was suppose to add a "::before" thing here but i don't how -->
+                                <span class="sr-only">Quora</span>
+                            </i>
+                        </a>
+                        <a class="mr-1" href="https://www.reddit.com/user/sohmarrious">
+                            <i aria-hidden="true" class="fab fa-reddit-alien" title="Reddit">
+                            <!-- was suppose to add a "::before" thing here but i don't how -->
+                            </i> 
+                            <span class="sr-only">Reddit</span>
+                        </a>
+                        <a class="mr-1" href="https://www.twitter.com/sohmarrious">
+                            <i aria-hidden="true" class="fab fa-twitter" title="Twitter">
+                             <!-- was suppose to add a "::before" thing here but i don't how -->
+                            </i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </p>
+                </header><!-- End of header element -->
+                <!-- Menu button -->
+                <button aria-controls="nav" aria-expanded="false" class="btn btn-sm d-md-none collapsed" data-bs target="aside > nav" data-bs toggle="collapse">
+                    Menu
+                </button>
+                <!-- Start of menu nav stlye -->
+                <nav class="d-md-block collapse" id="nav"style>
+                    <hr>
+                    <!-- syllabus layout -->
+                    <ol start="0"><!-- start="0" is used to toggle numbering style -->
+                        <li>
+                             <!-- was suppose to add a "::marker" thing here but i don't how -->
+                            <a href="">HTML,CSS and RESPONSIVE DESIGN</a></li>
+                        <li>
+                            <!-- was suppose to add a "::marker" thing here but i don't how -->
+                            <a href="">Git and GitHub</a></li>
+                        <li>
+                            <!-- was suppose to add a "::marker" thing here but i don't how -->
+                            <a href="">Python</a></li>
+                        <li>
+                            <!-- was suppose to add a "::marker" thing here but i don't how -->
+                            <a href="">Django Framework</a></li>
+                        <li>
+                            <!-- was suppose to add a "::marker" thing here but i don't how -->
+                            <a href="">SQL,Models and Migrations</a></li>
+                        <li>
+                            <!-- was suppose to add a "::marker" thing here but i don't how -->
+                            <a href="">JavaScipt</a></li>
+                        <li>
+                            <!-- was suppose to add a "::marker" thing here but i don't how -->
+                            <a href="">User Interfaces</a></li>
+                        <li>
+                            <!-- was suppose to add a "::marker" thing here but i don't how -->
+                            <a href="">Testing, CI/CD</a></li>
+                        <li>
+                            <!-- was suppose to add a "::marker" thing here but i don't how -->
+                            <a href="">Scalability</a></li>
+                    </ol>
+                    <hr> 
+                    <ul class="fa-ul" >
+                        <li data-marker="*" >
+                            <span class="fa-li">
+                                <i class="fas fa-circle">
+                                    <!-- was suppose to add a "::before" thing here but i don't how -->
+                                </i>
+                            </span>
+                            <a href="">Academic Honesty</a>
+                        </li>
+                        <li data-marker="*">
+                            <span class="fa-li">
+                                <i class="fas fa-circle">
+                                    <!-- was suppose to add a "::before" thing here but i don't how -->
+                                </i>
+                            </span>
+                            <a href="">CSC Certificates</a>
+                        </li>
+                        <li data-marker="*">
+                            <span class="fa-li">
+                                <i class="fas fa-circle">
+                                    <!-- was suppose to add a "::before" thing here but i don't how -->
+                                </i>
+                            </span>
+                            <a href="">FAQs</a>
+                        </li>
+                        <li data-marker="*">
+                            <span class="fa-li">
+                                <i class="fas fa-circle">
+                                    <!-- was suppose to add a "::before" thing here but i don't how -->
+                                </i>
+                            </span>
+                            <a href="">Gradebook</a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <ul class="fa-ul">
+                        <li data-marker="*">
+                            <span class="fa-li">
+                                <i class="fas fa-circle">
+                                    <!-- was suppose to add a "::before" thing here but i don't how -->
+                                </i>
+                            </span>
+                            <a href="">CSC Discussions </a>for Q&A
+                        </li>
+                        <li data-marker="*">
+                            <span class="fa-li">
+                                <i class="fas fa-circle">
+                                    <!-- was suppose to add a "::before" thing here but i don't how -->
+                                </i>
+                            </span>
+                            <a href="">Quick Start Guide</a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <ul class="small fa-ul">
+                        <li data-marker="*">
+                            <span class="fa-li">
+                                <i class="fas fa-circle">
+                                    <!-- was suppose to add a "::before" thing here but i don't how -->
+                                </i>
+                            </span>
+                            <a href="">CSC's App Name </a>
+                        </li>
+                        <li data-marker="*">
+                            <span class="fa-li">
+                                <i class="fas fa-circle">
+                                    <!-- was suppose to add a "::before" thing here but i don't how -->
+                                </i>
+                            </span>
+                            <a href="">CSC iTunes U</a>
+                        </li>
+                        <li data-marker="*">
+                            <span class="fa-li">
+                                <i class="fas fa-circle">
+                                    <!-- was suppose to add a "::before" thing here but i don't how -->
+                                </i>
+                            </span>
+                            <a href="">CSC Youtube  </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <ul>
+                        <li data-marker="*">
+                            <span class="fa-li">
+                                <i class="fas fa-circle">
+                                    <!-- was suppose to add a "::before" thing here but i don't how -->
+                                </i>
+                            </span>
+                            <a href="">Changlog </a>
+                        </li>
+                        <li data-marker="*">
+                            <span class="fa-li">
+                                <i class="fas fa-circle">
+                                    <!-- was suppose to add a "::before" thing here but i don't how -->
+                                </i>
+                            </span>
+                            <a href="">Status Page </a>
+                        </li> 
+                    </ul>
+                    <hr>
+                    <ul>
+                        <li data-marker="*">
+                            <span class="fa-li">
+                                <i class="fas fa-circle">
+                                    <!-- was suppose to add a "::before" thing here but i don't how -->
+                                </i>
+                            </span>
+                            <a href="">Communities </a>
+                        </li>
+                        <li data-marker="*" class="small">
+                            <span class="fa-li">
+                                <i class="fas fa-circle">
+                                    <!-- was suppose to add a "::before" thing here but i don't how -->
+                                </i>
+                            </span>
+                            <a href="">Clubhouse  </a>
+                        </li>
+                        <li data-marker="*" class="small">
+                            <span class="fa-li">
+                                <i class="fas fa-circle">
+                                    <!-- was suppose to add a "::before" thing here but i don't how -->
+                                </i>
+                            </span>
+                            <a href="">Discord  </a>
+                            <span class="badge bg-light ms-1 rounded-pill text-dark">Q&A</span>
+                        </li>
+                        <li data-marker="*" class="small">
+                            <span class="fa-li">
+                                <i class="fas fa-circle">
+                                    <!-- was suppose to add a "::before" thing here but i don't how -->
+                                </i>
+                            </span>
+                            <a href="">Facebook Group  </a>
+                            <span class="badge bg-light ms-1 rounded-pill text-dark">Q&A</span>
+                        </li>
+                        <li data-marker="*" class="small">
+                            <span class="fa-li">
+                                <i class="fas fa-circle">
+                                    <!-- was suppose to add a "::before" thing here but i don't how -->
+                                </i>
+                            </span>
+                            <a href="">Reddit </a>
+                            <span class="badge bg-light ms-1 rounded-pill text-dark">Q&A</span><!-- this span class form a rounded-pill buttonlike structure -->
+                        </li>
+                        <li data-marker="*" class="small">
+                            <span class="fa-li">
+                                <i class="fas fa-circle">
+                                    <!-- was suppose to add a "::before" thing here but i don't how -->
+                                </i>
+                            </span>
+                            <a href="">GitHub </a>
+                        </li>
+                        <li data-marker="*" class="small">
+                            <span class="fa-li">
+                                <i class="fas fa-circle">
+                                    <!-- was suppose to add a "::before" thing here but i don't how -->
+                                </i>
+                            </span>
+                            <a href="">Twitter </a>
+                        </li>
+                        <li data-marker="*" class="small">
+                            <span class="fa-li">
+                                <i class="fas fa-circle">
+                                    <!-- was suppose to add a "::before" thing here but i don't how -->
+                                </i>
+                            </span>
+                            <a href="">LinkedIn Page  </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <p> 
+                        <img src="" alt="CSC Shop">
+                    </p>
+                    <hr>
+                    <p>
+                        <a href="" class="small">
+                            <i class="fab fa-creative-commons me-1"> </i>
+                            License
+                        </a>
+                    </p>
+                </nav>
+                <!-- footer style -->
+                <footer></footer>
+            </aside><!-- end of my side bar -->
+            <!-- main content of the page like where one can actually read the notes from -->
+            <main class="col-mid" style="margin-bottom: 0px;">
+
+            </main>
+        </div>
+    </div>
+    
+</body>
+</html>
