@@ -12,7 +12,7 @@
 /* Start of index.html styling */
 header
 {
-    background-color: rgb(106, 144, 250);
+    background-color: rgb(15, 15, 15);
     height: 112px;
     line-height: 112px;
 }
@@ -52,17 +52,17 @@ header nav ul li a:hover
 /* images styling for each slider page */
 .img1{
     transition: 0.6s ease;
-    background-image:url(..//images/pitures_of_Me/mario5.jpg) no-repeat center;
+    background:url(..//images/pitures_of_Me/mario5.jpg) no-repeat center;
     background-size: auto;
 }
 .img2{
     transition: 0.6s ease;
-    background-image:url(..//images/sample_bg_pictures/sea-horse.jpeg) no-repeat center ;
+    background:url(..//images/sample_bg_pictures/sea-horse.jpeg) no-repeat center ;
     background-size: auto;
 }
-img3{
+.img3{
     transition: 0.6s ease;
-    background-image:url(..//images/Restaurant_Sample_images/Restaurant\ logo\ on\ wall.jpg)no-repeat center;
+    background:url(..//images/Restaurant_Sample_images/Restaurant\ logo\ on\ wall.jpg)no-repeat center;
     background-size: auto;
 }
 /* End of images styling for each slider page */
@@ -71,11 +71,14 @@ img3{
 {
     height: 710px;
     width: 100%;
-    color:white;
+    color:crimson;
     text-align: center;
 }
 .slider h2{
     font-weight: bold;
+}
+a{
+    text-decoration: none;
 }
 .slider span
 {

@@ -1,6 +1,12 @@
 {
-    "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
     "liveServer.settings.ChromeDebuggingAttachment": false,
-    "liveServer.settings.CustomBrowser": "chrome:PrivateMode",
-    "liveServer.settings.fullReload": true
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveServer.settings.fullReload": true,
+    "terminal.integrated.allowMnemonics": true,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.enableBell": true,
+    "terminal.integrated.fontSize": 10,
+    "terminal.integrated.lineHeight": 0,
+   
 }

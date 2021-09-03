@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nicer tables</title>
+    <style>
+        @media(max-width:599px) {
+        body{
+            background: url(..//images/pitures_of_Me/mario2.jpg) repeat center;
+            width: 100%;
+            background-color: rgb(243, 195, 137);
+        }}
+        @media(min-width:600px) {
+        body{
+            background-image: url(..//images/pitures_of_Me/mario2.jpg) no-repeat left;
+            width: auto;
+            background-color: blueviolet;
+        }}
+       
+        
+        table{
+            background: pink;
+            border: 1px solid springgreen;
+            border-collapse: collapse;
+            /* text-align: center; */
+            margin-left:  450PX;
+           
+            }
+            h2{
+                caret-color: blueviolet;
+                color: blueviolet;
+                font-size: 35px;
+            }
+        th{
+            background-origin: padding-box;
+            border: 3px solid rgb(255, 221, 0);
+        }
+        tbody{
+            border-color:2px solid black;
+            border: 2px solid plum;
+        }
+        tr{
+            background-origin: padding-box;
+            border: 3px solid crimson;
+            color: indigo;
+           
+            height: 50px;
+        }
+        td{
+            background-origin: padding-box;
+            border: 3px solid crimson;
+            color: rgb(244, 239, 248);
+            background-color: black;
+             width: 100px;
+        }
+        .tabl, table{
+            padding: 2%;
+        background-color: rgb(196, 227, 238);
+        text-decoration-style: wavy;
+        text-align: center;
+        }
+        /* flexbox */
+        #CONTAINER{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #CONTAINER>div{
+            background-color: springgreen;
+            margin:  20px ;
+            padding: 10px;
+        }
+        /* Html Grid */
+        .grid{
+            background-color: green;
+            display: grid;
+            grid-template-columns: 200px 200px auto;
+            grid-row-gap: 20px;
+            grid-column-gap: 10px;
+            padding: 20px;
+        }
+        .grid-items{
+            background-color: rgb(194, 192, 192);
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="tabl">  
+        <table>
+            <h2>A Nicer Table</h2>
+            <thead>
+                <th>Ocean</th>
+                <th>Avr.Depth</th>
+                <th>Max.Depth</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Atlantic</td>
+                    <td>3646m</td>
+                    <td>8486m</td>
+                    
+                </tr>
+                <tr>
+                    <td>Pacific</td>
+                    <td>4280m</td>
+                    <td>10911m</td>
+                </tr>
+                <tr>
+                    <td>Mediteranian</td>
+                    <td>1460m</td>
+                    <td>5267m</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- flexbox -->
+    <DIV id="CONTAINER">
+            <div>flexbox 1</div>
+            <div>flexbox 02</div>
+            <div>flexbox 03</div>
+            <div>flexbox 04</div>
+            <div>flexbox 05</div>
+            <div>flexbox 06</div>
+            <div>flexbox 07</div>
+            <div>flexbox 08</div>
+            <div>flexbox 09</div>
+            <div>flexbox 10</div>
+            <div>flexbox 11</div>
+            <div>flexbox 12</div>
+    </DIV>
+    <!-- html grid -->
+    <div class="grid">
+        <div class="grid-items">1</div>
+        <div class="grid-items">2</div>
+        <div class="grid-items">3</div>
+        <div class="grid-items">4</div>
+        <div class="grid-items">5</div>
+        <div class="grid-items">6</div>
+        <div class="grid-items">7</div>
+        <div class="grid-items">8</div>
+        <div class="grid-items">9</div>
+        <div class="grid-items">10</div>
+        <div class="grid-items">11</div>
+        <div class="grid-items">12</div>
+    </div>
+</body>
+</html>

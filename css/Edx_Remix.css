@@ -1,0 +1,172 @@
+    * {
+    word-break: break-word;/* no effect! */
+ }
+ /* *, ::before, ::after {
+    box-sizing: border-box;
+ } */
+    /* pseudo ::aftre element */
+        /* *, ::before, ::after {
+    box-sizing: border-box;
+} */
+  a, .btn-link {
+             text-decoration: white none; /*changes text color*/
+         } 
+        
+        /* *, ::before, ::after {
+            box-sizing: border-box;
+         } */
+         /* pseudo class for the content in the flex dark aside bar */
+         a:-webkit-any-link {/* this works for the link colors and cursor pointer */
+            color: -webkit-link;
+            cursor: pointer;
+            text-decoration: white none; /*to remove the default underlinx of links*/
+        }
+        /* a {
+            color: rgb(165, 28, 48);
+            text-decoration: underline;
+        } */
+        @media (prefers-reduced-motion: no-preference){
+      :root {
+    scroll-behavior: auto smooth;
+                }}
+ html {
+    font-size: 16px;/* no effect */
+    display: block;
+}
+body {
+    /* margin: 0px; */
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    /* color: var(--bs-body-color); */
+    /* text-align: var(--bs-body-text-align); */
+    /* background-color: var(--bs-body-bg); */
+    /* text-size-adjust: 100%; */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /* another tryout body styling.. to be removed if not working and no effect too */
+    
+    }
+
+        :last-child:not(pre){/* works for the top and bottom margins of the page */
+            margin-bottom: 0px;
+        }
+    small, .small{/* work for the size of content that is wrapped around with the small elmt */
+        font-size: 0.875em;
+    }
+            /* INHERITED FROM DIV.ROW */
+            .row {
+                --bs-gutter-x: 1.5rem;/* gutters are used as padding to spacify */
+                --bs-gutter-y: 0;
+                display: flex;/* this is the style that sets the division btwn the aside bar and th main content */
+                flex-wrap: wrap;/* no functionality */
+                margin-top: calc(var(--bs-gutter-y) * -1);/* no functionality */
+                margin-right: calc(var(--bs-gutter-x) * -0.5);/* this style is used to insert a horizontal scroll bar */
+                margin-left: auto -0.5%;/*first i changed  calc(var(--bs-gutter-x) * -0.5) to auto -0.5% all this margin-left in the div.row stuff shifts the aside nav bar 0.5px away from the left as intended */
+            }
+   /* inherited from aside.col-md */
+   /* aside {
+    background-color: rgb(15, 15, 15);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.125rem;/* no effect */
+    /* } */ 
+     /* hover style for the aside  */
+     aside a, aside a:hover, aside button[data-bs-toggle="collapse"], aside button[data-bs-toggle="collapse"]:hover {
+        background-color: inherit;/* has effect on the hoverx property */
+        border-color: rgba(255, 255, 255, 0.5);
+        border-top-color: rgba(255, 255, 255, 0.5);
+        border-right-color: rgba(255, 255, 255, 0.5);
+        border-bottom-color: rgba(255, 255, 255, 0.5);
+        border-left-color: rgba(255, 255, 255, 0.5);
+        color: rgb(255, 255, 255);/* just for the hover color */
+}
+/* this is anoda copy of the aside style */
+/* if removed there will be no more textwrap! */
+
+aside{  
+    
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0,0,0,0.2);/* gives a cool shadow at the back of the aside box */
+    color: rgba(255,255,255,0.5);/* no change */
+    font-size: 1.125rem;/* no change */
+    background-color: rgb(0, 0, 0); /* WOrks */
+    /* width: 100%; */
+    /* max-width: 100%; */
+    padding: 2rem 2rem;/*works well with a nice shift from left margin and a fix to the hr */
+    flex: 0 1 20rem; /* works perfectly by wrappx text and cool border box for the aside */
+    /* overflow-y: auto; */
+    position: sticky;/* no change */
+    z-index: 1019;/* no change */
+    margin-top: 81.25px;/* no change */
+    /* height: 410.75px; */
+    /* top: 81.25px; */ 
+    /* d */
+}
+
+/* To place you main content to the main position as per the html5 semantic, us this styling or it will be placed in the body at default */
+/* anoda copy of the main style */
+main{    
+   /* display: grid; */ /* IF kept as style it will increase the space btwn headings and paragraphs to fill the web page
+    */
+    box-sizing: border-box;/* no change */
+    word-break: break-word;/* no change */
+    width: 100%;/* no change */
+    margin-top: var(--bs-gutter-y);/* no change */
+    flex: 1 0 0%;/* this is the main stylx here.To place you main content to the main position as per the html5 semantic, us this styling or it will be placed in the body at default */
+    max-width: 80rem;/* no change */
+    overflow: auto;/* no change */
+    padding: 4rem 2rem;/*works!.. adjusts the space btwn aside and main content */
+    margin-bottom: 0px;}
+    /* this one kind of work for the spacing */
+    /* inherited from html.wf-ptsans-n4-active.w... */
+    :root {
+        /* --bs-blue: #0d6efd;
+        --bs-indigo: #6610f2;
+        --bs-purple: #6f42c1;
+        --bs-pink: #d63384;
+        --bs-red: #dc3545;
+        --bs-orange: #fd7e14;
+        --bs-yellow: #ffc107;
+        --bs-green: #198754;
+        --bs-teal: #20c997;
+        --bs-cyan: #0dcaf0;
+        --bs-white: #fff;
+        --bs-gray: #6c757d;
+        --bs-gray-dark: #343a40;
+        --bs-gray-100: #f8f9fa;
+        --bs-gray-200: #e9ecef;
+        --bs-gray-300: #dee2e6;
+        --bs-gray-400: #ced4da;
+        --bs-gray-500: #adb5bd;
+        --bs-gray-600: #6c757d;
+        --bs-gray-700: #495057;
+        --bs-gray-800: #343a40;
+        --bs-gray-900: #212529;
+        --bs-primary: #0d6efd;
+        --bs-secondary: #6c757d;
+        --bs-success: #198754;
+        --bs-info: #0dcaf0;
+        --bs-warning: #ffc107;
+        --bs-danger: #dc3545;
+        --bs-light: #f8f9fa;
+        --bs-dark: #212529;
+        --bs-primary-rgb: 13,110,253;
+        --bs-secondary-rgb: 108,117,125;
+        --bs-success-rgb: 25,135,84;
+        --bs-info-rgb: 13,202,240;
+        --bs-warning-rgb: 255,193,7;
+        --bs-danger-rgb: 220,53,69;
+        --bs-light-rgb: 248,249,250;
+        --bs-dark-rgb: 33,37,41;
+        --bs-white-rgb: 255,255,255;
+        --bs-black-rgb: 0,0,0;
+        --bs-body-rgb: 33,37,41; */
+        /* --bs-font-sans-serif: "PT Sans"; */
+        /* --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; */
+        /* --bs-gradient: linear-gradient(180deg, rgba(255,255,255,0.15), rgba(255,255,255,0)); */
+        /* --bs-body-font-family: var(--bs-font-sans-serif); */
+        /* --bs-body-font-size: 1rem; */
+        /* --bs-body-font-weight: 400; */
+        --bs-body-line-height: 1.5;/* works for the space btwn content in whole doc */
+        /* --bs-body-color: #212529; */
+        /* --bs-body-bg: #fff; */
+    }
