@@ -17,24 +17,33 @@
             padding: 10px;/*how much space is needed around the header*/
             background-color: black;
         }
-        #main-footer{ /* text-align is abit diff from align-items in that align-items Aligns flex items along the cross axis of the current line of the flex container. */
+        .main-footer{ /* text-align is abit diff from align-items in that align-items Aligns flex items along the cross axis of the current line of the flex container. */
             align-items: center;/*for text position*/
             background-color: black;
             color: white;/*font text color*/
-            font-size: 18px;/* how big the text should be displayed */            
+            font-size: 18px;/* how big the text should be displayed */  
+            display: inline;/* to change how the listing should be displayed on the browser */ 
             }
-            #main-footer div ul li{
-                list-style:none;
-                display: inline;/* to change how the listing should be displayed on the browser */
+            .main-footer>.cntct {
+               
+                
                 float:none;/* takes content to the right position on the browser */
-                justify-content: space-between;
+                /* justify-content: space-between; */
+            }
+            .cntct>ul>li>a{
+                left: 25%;
+                float: left;
+                margin-top: -3%;
+                display: inline;
             }
          body{ /* just bg is different from bg-img in the sense that bg is a Shorthand property for setting most background properties at the same place in the style sheet. */
-            background: url(..//images/sample_bg_pictures/eagle-wing.jpeg)linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%) no-repeat center;
+            background:linear-gradient(to top, rgb(44, 43, 43)80%, rgb(10, 10, 10)80%) , url(..//images/sample_bg_pictures/eagle-wing.jpeg) ;
+            background-size: cover;
             position: absolute;
             opacity:100%;/* HOW CLEAR DO U WANT UR CONTENt to be vissible */
             
-        }       
+        } 
+
         
     </style>
 </head>
@@ -96,10 +105,10 @@
             <video src="C:\Users\AnjwiClinton\Desktop\marrious11.github.io\videos\Annie (2014) - Tomorrow Scene (49)  Movieclips 360 x 640.mp4" autoplay controls poster="C:\Users\AnjwiClinton\Desktop\marrious11.github.io\images\LogoSize_Favicon.ico\logo_size.jpg"></video>
         </aside>
         <!--We might also want a footer on the blog-->
-        <footer id="main-footer">
+        <footer class="main-footer">
             <p >Copyright &copy;2021, AA-web dev.
             </p>
-                <div>
+                <div class="contact">
                     <ul>
                         <li> contact us via</li>                         
                         <li><img src="C:\Users\AnjwiClinton\Desktop\marrious11.github.io\images\Social_icons\facebook_icon.png" alt=""></li>

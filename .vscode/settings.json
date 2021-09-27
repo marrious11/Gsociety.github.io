@@ -8,5 +8,18 @@
     "terminal.integrated.enableBell": true,
     "terminal.integrated.fontSize": 10,
     "terminal.integrated.lineHeight": 0,
+    "debug.console.acceptSuggestionOnEnter": "on",
+    "debug.console.closeOnEnd": true,
+    "debug.console.fontSize": 10,
+    "problems.showCurrentInStatus": true,
+    "liveshare.diagnosticLogging": true,
+    "markdown-pdf.outputDirectoryRelativePathFile": true,
+    "markdown-pdf.type": [
+        "pdf",
+        "html",
+        "jpg",
+        "png",
+        "mp4"
+    ],
    
 }

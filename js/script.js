@@ -4,7 +4,7 @@ $(Document).ready(function(){
         if(this.scrollY > 20){
             $('.navbar').addclass("sticky");
         }else{
-            $('.navbar').removeclass("sticky");
+            $('.navbar').removeclass("sticky");/* changes color upon scroll */
         }
     });
     // Toggle menu/navbar script
@@ -24,5 +24,5 @@ function populate (s1,c2)
                 {
                     var optionArray=["select|select","Software|Software","Web devlopment|Web development","System Admin|System Admin"];
                 }
-                else if(s1.value == "")
+                else if(s1.value == "");
     }

@@ -1,0 +1,38 @@
+  /* Form styling */
+    
+  th{
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+body{
+background:linear-gradient(to top, rgba(0,0,0,0.5)60%,rgba(0,0,0,0.5)60%),url(..//images/sample_bg_pictures/mama.jpeg);
+background-position: center;
+background-size: cover;
+height: 100vh;
+color: #fff;
+
+}
+
+/* login-nav */
+nav,ul>li{
+display: inline;
+text-decoration: none;
+width: 100%;
+padding: 10px;
+margin: auto;
+}
+#login,nav{
+padding: 10px;
+background: rgb(22, 22, 22);
+}
+.signup{
+    background: linear-gradient(to top, rgba(187, 246, 247, 0.8)50%, rgba(241, 219, 219, 0.8)50%);
+    width: 630px;
+    position: absolute;
+    left: 25%;
+    border-radius: 10px;
+    /* background-color: aquamarine; */
+    margin-top: 8%;
+}

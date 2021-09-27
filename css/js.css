@@ -1,0 +1,35 @@
+*, html, body{
+    margin: 0px;
+    padding: 0;
+    border: 0;
+}
+table{
+    background: rgb(245, 209, 196);
+    border: 1PX solid black;
+    border-radius: 10px;
+    fill-opacity: initial;
+    text-align: center justify;
+}
+ th{
+    background-color:  crimson;
+    border: 1PX solid black;
+    border-radius: 30px;
+    fill-opacity: initial;
+    text-align: center justify;
+}
+tr td{
+    border: 1px solid black;
+    font-weight: 700;
+    font-style: oblique;
+}
+#other a , #link td{
+            background: greenyellow;
+            text-decoration: solid;
+}
+.hack{
+    border: 2px solid crimson;
+    border-radius: 30px;
+    text-align:  center;
+    background:lightblue,linear-gradient(rgba(53, 52, 52, 0.5),50% rgba(152, 217, 224, 0.8)50%), url(..//images/pitures_of_Me/mario@go-groups.jpg) no-repeat;
+    background-position:cover ;
+}

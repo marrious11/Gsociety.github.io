@@ -1,0 +1,350 @@
+   /*i am supposed to add google fonts!!! */
+       
+        /* Page styling */
+         *{
+             text-decoration: none; /*used to remove the default link uderlinx */
+            box-sizing: border-box;
+            /* border-radius: 20px; */
+            padding: 0px;
+            margin: 0px;
+              } 
+                /* header/navbar styling */
+             .navbar{
+                        background: rgb(212, 211, 211) ;
+                        position: fixed; 
+                        width: 100%;/* This width will make the bg-color to fill across the web page */ 
+                        z-index: 999;/* makes the about section to move beneath the navbar */
+                        padding: 30px 0;/* to give some space btwn list items */ 
+                        font-family: sans-serif ; 
+                        transition: all 0.3s ease;
+                    }
+       header>.navbar>.max-width{
+            max-width: 1300px;
+            padding: 0 80px;/* used to cause porfolio in div to shift 80px to th rhs */
+            margin: auto;/* balances the margin towards the rHS. */
+        }
+        /* Porfolio navbar styling */
+
+/* to cause the navbar to stay put on scrolling the web page */
+.navbar.sticky  {
+     padding: 15px 0;
+     background-color: crimson; /* background-color changes to: crimson; upon upper scroll*/
+   
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+}
+.navbar .logo a span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: #fff;/* changes span color to white upon scroll and back to crimson upon scroll release */
+}
+.navbar .menu li{
+    list-style:none;
+    display: inline;/* to change how the listing should be displayed on the browser */
+    float:none;/* takes content to the right position on the browser */
+}
+.navbar .menu li a{
+    color: #fff;     
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;    
+    transition: color 0.3s ease;
+   
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+.navbar.sticky .menu li a:hover{    
+    color: #fff;/* upon scroll no hover effect occurs */
+}
+
+/* Menu btn styling */
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Homesection styling */
+.home{
+    display: flex;
+    background: url(../images/pitures_of_Me/Mario@GG.jpg) no-repeat center /* no repeat right moves the img to the right on the browser */;    
+    width: 1000Px;    
+    height: 100vh;
+    /* min-height: 500px; */
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;/* moves the text in this class to the left */
+}
+.home .home-content .text1{
+    font-size: 27px;/* increases the content at text1 */
+}
+.home .home-content .text2{
+    font-size: 27px;/* increases the content at text2 */
+    font-weight: 600;/* adds the boldness of the content at text2 */
+    margin-left: -3px;/* takes content alitle bit to the left */
+}
+.home .home-content .text3{
+    font-size: 40px;/* increases the content at text3 */
+    margin: 5px 0;
+}
+.home .home-content .text3 span{
+    color: crimson;
+    font-weight: 500;
+} 
+
+/* hire me btn */
+.home .home-content a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 25px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: #fff;
+    background: none;
+}
+
+ /* ---------------about section styling ------------------*/
+ section{
+    padding: 100px 0;
+}
+.about{
+    font-family: 'Poppins', sans-serif;
+}
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px ;
+    font-weight: 500px;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content: "Who am I";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 3px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px ;
+    object-fit: cover;
+    border-radius:30px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: crimson;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;/* how tall and wide respectively */
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color: crimson;
+    background: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive media Querry start */
+@media(max-width: 1300px){
+    .home .max-width{
+    margin-left: 0px;/* moves the text in this class to the left */
+    }
+}
+@media(max-width: 1104px){
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px ;
+        
+    }
+}
+
+@media(max-width: 991px){/* for navbar content and btn icon */
+    .max-width{
+        padding: 0 50px;
+    }
+    /* .navbar .menu{
+        position: fixed;  
+        height: 100vh;
+        width: 100%;
+        left:0;
+        top: 0; */
+        /* background: #111;
+        text-align: center;for navbar menu li a still @media 991px */
+        /* padding-top:80px;for navbar menu li a still @media 991px */
+        /* tra
+        nsition: all 0.3s ease;it is going to cause the js menu-side bar to use 0.3s to display */
+    /* } */
+    /* .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    } */
+}
+
+@media(max-width: 947px){/* for button and dropdown btn */
+    .max-width{
+            padding: 0 50px;/* used to cause porfolio in div to shift 50px to th rhs */
+    }
+     .menu-btn{
+      display: block;
+      z-index: 999;
+}
+.menu-btn i.active::before{
+    content: "\f00d";/* It gives a cancil option to the generated menu bar */
+}
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left:-100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top:80px;
+        transition: all 0.3s ease;/* it is going to cause the js menu-side bar to use 0.3s to display */
+    }
+    .navbar .menu.active{
+        left:0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25PX;
+    }
+    .home .home-content .text2{/* this is the section that causes the navbar to disapppear */
+    font-size: 70px;/* increases the content at text2 */
+        }
+.home .home-content .text3{
+    font-size: 35px;/* increases the content at text3 */   
+    }
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    } 
+    .max-width{
+        max-width: 800px;
+        
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+
+    }
+    .about .about-content .right{
+        flex: 100% ;
+    }
+    
+ 
+}
+
+
+@media(max-width: 690px){/* for margin at screen 690 */
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text2{
+    font-size: 60px;/* increases the content at text2 */
+        }
+        .home .home-content .text3{
+    font-size: 32px;/* increases the content at text2 */
+        }
+        .home .home-content a{
+            font-size: 20px;
+            /* padding: 9px 25px; */
+        }
+     
+    }
+   @media(max-width: 500px){   /* zooms-out text2 */   
+    .home .home-content .text2{
+    font-size: 50px;/* increases the content at text2 */
+        } 
+        .home .home-content .text3{
+    font-size: 27px;/* increases the content at text2 */
+        }
+    } 
+   

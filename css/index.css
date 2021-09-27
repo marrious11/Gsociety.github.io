@@ -28,42 +28,54 @@ header nav
 {
     float: right;
 }
-.logo img
-{
-    margin-top: 1px;
-    margin: right 20px; 
-    padding: 5%;
+.logo img{
+    /* margin-top: 1px;
+    margin: right 20px; */
+    padding:30px 30px 30px 30px; 
+    border-radius: 100%;
+    font-family: arial;
+    float: left;
+    /* padding-top:50px;shifts content to the top wrt the float */
+    /* padding-left: 20PX; shifts content away from the left to rhs */
+    /* padding-bottom: 50px ; */
     
-
+   
 }
 header nav ul li a
 {
 padding-right: 30px;
 font-weight: bold;
-color: white;
+color: rgb(253, 7, 192);
 transition: all 0.5s ease-in;
 }
-header nav ul li a:hover
+/* header nav ul li a:hover
 {
-    text-decoration: none;
+    text-decoration: underline;
     color: red;
     
-}
+} */
+a:hover{
+    background:rgb(253, 253, 253);
+    text-decoration: underline;
+    border-radius: 20px;
+  
+    }
+    
 /* images styling for each slider page */
 .img1{
     transition: 0.6s ease;
-    background:url(..//images/pitures_of_Me/mario5.jpg) no-repeat center;
-    background-size: auto;
+    background:linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(..//images/pitures_of_Me/mario5.jpg) no-repeat center;
+    background-size: cover;
 }
 .img2{
     transition: 0.6s ease;
-    background:url(..//images/sample_bg_pictures/sea-horse.jpeg) no-repeat center ;
-    background-size: auto;
+    background:linear-gradient(to top, rgba(0,0,0,0.5)95%, rgba(0,0,0,0.5)95%), url(..//images/sample_bg_pictures/sea-horse.jpeg)  ;
+    background-size: cover;/* the cover value makes the photo to fill out the content to which it is being to.... and too it replaces the action of the "no-repeat center" value too */
 }
 .img3{
     transition: 0.6s ease;
-    background:url(..//images/Restaurant_Sample_images/Restaurant\ logo\ on\ wall.jpg)no-repeat center;
-    background-size: auto;
+    background:linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(..//images/Restaurant_Sample_images/Restaurant\ logo\ on\ wall.jpg) no-repeat center;
+    
 }
 /* End of images styling for each slider page */
 
@@ -90,13 +102,14 @@ a{
 }
 @media (min-width: 600px) {
     body{
-        background-color: rgb(244, 209, 245);
+        background-color:none;
     }
 }
 @media (max-width: 599px) {
-    body{
-        background-color: rgba(153, 237, 248, 0.911);
-    }
+   .img1{
+        background: url(..//images/sample_bg_pictures/eagle-wing.jpeg);
+        background-size: cover;
+    } 
 }
 /*End of index.html styling */
 /* -------------------------------------------------------------------------------------------*/

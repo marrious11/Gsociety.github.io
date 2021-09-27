@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/styling.css" type="text/css">
+    <link rel="stylesheet" href="../css/Porfolio.css" type="text/css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,224 +9,96 @@
     <!-- jQuerry link is to be placed here!-->
    
     <!-- even here too !!..fonts awesome fonts 5-->
-   
-    <style>
-        /*i am supposed to add google fonts!!! */
-       
-        /* Page styling */
-        *{
-            text-decoration: none;/* used to remove the default link uderlinx */
-            box-sizing: border-box;
-            padding: 0px;
-            margin: 0px;
-        }
-        .max-width{
-            max-width: 1300px;
-            padding: 0 80px;/* used to cause porfolio in div to shift 80px to th rhs */
-            margin: auto;/* balances the margin towards the rHS. */
-        }
-        /* Porfolio navbar styling */
-.navbar{
-    background: rgb(220, 20, 210);
-    position: fixed; 
-     width: 100%;/* This width will make the bg-color to fill across the web page */ 
-     padding: 30px 0;/* to give some space btwn list items */ 
-    font-family: sans-serif ; 
-    transition: all 0.3s ease;
-}
-/* to cause the navbar to stay put on scrolling the web page */
-.navbar.sticky  {
-     padding: 15px 0;
-     background-color: crimson; /* background-color: crimson; */
-   
-}
-.navbar .max-width{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.navbar .logo a{
-    font-size: 35px;
-    font-weight: 600;
-    color: #fff;
-}
-.navbar .logo a span{
-    color: crimson;
-    transition: all 0.3s ease;
-}
-.navbar.sticky .logo a span{
-    color: #fff;
-}
-.navbar .menu li{
-    list-style:none;
-    display: inline;/* to change how the listing should be displayed on the browser */
-    float:none;/* takes content to the right position on the browser */
-}
-.navbar .menu li a{
-    color: #fff;     
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 25px;    
-    transition: color 0.3s ease;
-   
-}
-.navbar .menu li a:hover{
-    color: crimson;
-}
-.navbar.sticky .menu li a:hover{    
-    color: #fff;
-}
-
-/* Menu btn styling */
-.menu-btn{
-    color: #fff;
-    font-size: 23px;
-    cursor: pointer;
-    display: none;
-}
-
-/* Homesection styling */
-.home{
-    display: flex;
-    background: url(../images/Restaurant_Sample_images/Restaurant\ logo\ design\ free\ template.jpg) no-repeat right/* no repeat right moves the img to the right on the browser */ ;
-    height: 100vh;
-    min-height: 500px;
-    color: #fff;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.home .max-width{
-    margin: auto 0 auto 40px;/* moves the text in this class to the left */
-}
-.home .home-content .text1{
-    font-size: 27px;/* increases the content at text1 */
-}
-.home .home-content .text2{
-    font-size: 27px;/* increases the content at text2 */
-    font-weight: 600;/* adds the boldness of the content at text2 */
-    margin-left: -3px;/* takes content alitle bit to the left */
-}
-.home .home-content .text3{
-    font-size: 40px;/* increases the content at text3 */
-    margin: 5px 0;
-}
-.home .home-content .text3 span{
-    color: crimson;
-    font-weight: 500;
-}
-
-/* responsive media Querry start */
-@media(max-width: 1104px){
-    .home .max-width{
-    margin-left: 0px;/* moves the text in this class to the left */
-    }
-}
-
-@media(max-width: 991px){
-    .max-width{
-        padding: 0 50px;
-    }
-}
-
-@media(max-width: 947px){
-    .max-width{
-            padding: 0 50px;/* used to cause porfolio in div to shift 50px to th rhs */
-    }
-     .menu-btn{
-      display: block;
-      z-index: 999;
-}
-.menu-btn i.active::before{
-    content: "\f00d";/* It gives a cancil option to the generated menu bar */
-}
-    .navbar .menu{
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        left:-100%;
-        top: 0;
-        background: #111;
-        text-align: center;
-        padding-top:80px;
-        transition: all 0.3s ease;/* it is going to cause the js menu-side bar to use 0.3s to display */
-    }
-    .navbar .menu.active{
-        left:0%;
-    }
-    .navbar .menu li{
-        display: block;
-    }
-    .navbar .menu li a{
-        display: inline-block;
-        margin: 20px 0;
-        font-size: 25PX;
-    }
-    .home .home-content .text2{
-    font-size: 70px;/* increases the content at text2 */
-        }
-.home .home-content .text3{
-    font-size: 35px;/* increases the content at text3 */   
-    }
- 
-}
-@media(max-width: 690px){
-    .max-width{
-        padding: 0 23px;
-    }
-    .home .home-content .text2{
-    font-size: 60px;/* increases the content at text2 */
-        }
-        .home .home-content .text3{
-    font-size: 32px;/* increases the content at text2 */
-        }
-    }
-    @media(max-width: 500px){ 
-    .home .home-content .text2{
-    font-size: 50px;/* increases the content at text2 */
-        }
-        .home .home-content .text3{
-    font-size: 27px;/* increases the content at text2 */
-        }
-    } 
-   
-    </style>
 </head>
 <body>
     <!-- nav.classname for auto gen,, an elmt wth a class -->
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"> <a href="#">Portfo<span>lio.</span></a></div>       
-            <!-- ul.classname>li*6>a to gen an ul with a class,six listitems and 6 links -->
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="Myblog.html">Visit Our Blog</a></li>
-                <li><a href="form1.html">Login</a></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i> <!-- used to create a menu-side btn-->
-            </div>
-       </div>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <div class="max-width">
+                <div class="logo"> <a href="#">Portfo<span>lio.</span></a></div>       
+                <!-- ul.classname>li*6>a to gen an ul with a class,six listitems and 6 links -->
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="Myblog.html">Visit Our Blog</a></li>
+                    <li><a href="form1.html">Login</a></li>
+                </ul>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i> <!-- used to create a menu-side btn-->
+                </div>
+           </div>
+        </nav>
+    </header>
     <!-- Home section start -->
+   <main>
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
                 <div class="text1">Hello my name is</div>
                 <div class="text2">Mario Godson</div>
-                <div class="text3">And I'm a <span>Programmer</span></div>                  
+                <div class="text3">And I'm a <span>Programmer</span></div> 
+                <a href="">Hire me</a>                 
                 
             </div>
         </div>
     </section>
-    <!-- input some texe
-    t on the porfolio -->
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt minus totam tempora quo sint nulla! Aspernatur explicabo rerum cum voluptatibus! Rerum suscipit odit aliquid error, commodi necessitatibus neque facilis ex hic animi? Qui sint molestias quae eos libero veritatis incidunt numquam dolor accusantium id repellat earum quibusdam non hic autem explicabo et iste consectetur, ducimus tenetur ipsa voluptatum delectus sapiente dolorem! Accusantium eveniet vel neque odio voluptate praesentium corporis, aut, architecto temporibus, ipsa sit omnis laborum aperiam commodi. Soluta eaque mollitia itaque aliquam magnam id saepe, laborum ab, nisi, sunt in tempore! Aut velit ducimus voluptatibus illo iusto adipisci perspiciatis odit iure iste natus. Magnam, consequatur commodi. Deserunt iure quisquam aliquam doloremque officiis. Ratione, ut, iusto sapiente repellat rerum sunt doloribus accusantium dolorum, neque aut sed odit eos ipsam facilis nisi ea eveniet consequuntur esse? Ad inventore mollitia iusto aliquam, unde dolore? Beatae incidunt dolorem deserunt quam autem consequatur dolor facere nemo saepe vitae odio, accusantium excepturi praesentium expedita similique, nesciunt consequuntur perferendis, alias quas eos non? Perspiciatis velit cumque expedita aperiam ipsum rerum cum, a quos maxime molestiae veniam sapiente deleniti, reprehenderit dolorum consequuntur aspernatur nemo totam excepturi at atque accusantium ullam eligendi! Odit enim tempore voluptates aperiam officia!
-    </p>
-    <script src="js/script.js" type="text/javascript"></script>
+    <!-- input some text on the porfolio -->
+   <!-- about section start -->
+
+   <section class="about" id="about">
+    <div class="max-width">
+        <h2 class="title">About Me</h2>
+        <div class="about-content">
+           <div class="column left">
+               <img src="../images/pitures_of_Me/Mario@GG.jpg" alt="">
+           </div>
+           <div class="column right">
+               <div class="text">I'm Mario and I'm a <span>Programmer</span></div>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quisquam consequatur sint ipsum odio doloremque accusantium, ratione placeat ea. Tenetur rem nam corporis tempore aut ab adipisci repellendus corrupti perferendis placeat dolore atque alias iure vitae nisi ratione aperiam maxime veniam, numquam labore officiis voluptatibus.</p>
+               <a href="">Download CV</a>
+           </div>
+        </div>
+    </div>
+</section>
+    <!-- *********Servicessection start*********** -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">My Services</h2>
+            <div class="serv-content">
+              <div class="card">
+                  <div class="box">
+                      <i class="fas fa-paint-brush"></i><!-- didn't display!! -->
+                      <div class="text">Wed Design</div>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, pariatur.</p>
+                  </div>
+              </div>
+
+              <div class="card">
+                <div class="box">
+                    <i class="fas fa-chart-line"></i><!-- didn't display!! -->
+                    <div class="text">Advertising</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, pariatur.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <i class="fas fa-code"></i><!-- didn't display!! -->
+                    <div class="text">Apps Design</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, pariatur.</p>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </section>
+   </main>
+   <footer>
+
+   </footer>
+    <script src="../js/script.js" type="text/javascript"></script>
     
-    <div style="margin-top: 500px;"></div>
+    <div style="margin-top: 10px;"></div>
 </body>
 </html>
