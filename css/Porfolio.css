@@ -1,113 +1,120 @@
    /*i am supposed to add google fonts!!! */
+   /*A1*/@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
        
-        /* Page styling */
-         *{
+        /*A- Page styling */
+       /*A0*/  *{
              text-decoration: none; /*used to remove the default link uderlinx */
             box-sizing: border-box;
             /* border-radius: 20px; */
             padding: 0px;
             margin: 0px;
-              } 
-                /* header/navbar styling */
-             .navbar{
-                        background: rgb(212, 211, 211) ;
-                        position: fixed; 
-                        width: 100%;/* This width will make the bg-color to fill across the web page */ 
-                        z-index: 999;/* makes the about section to move beneath the navbar */
-                        padding: 30px 0;/* to give some space btwn list items */ 
-                        font-family: sans-serif ; 
-                        transition: all 0.3s ease;
-                    }
-       header>.navbar>.max-width{
+              }  
+              /*A6*/.max-width{
             max-width: 1300px;
             padding: 0 80px;/* used to cause porfolio in div to shift 80px to th rhs */
             margin: auto;/* balances the margin towards the rHS. */
-        }
+                }
+                /*B- header/navbar styling */
+             .navbar{
+                        
+                        position: fixed; 
+                        width: 100%;/* This width will make the bg-color to fill across the web page */ 
+                        z-index: 999;/*Ofr the c6 effect-- makes the about section to move beneath the navbar: On hover/focus/active, we bring a particular element to the forefront with a higher z-index value to show their border over the sibling elements. */
+                        padding: 30px 0;/* to give some space btwn list items */ 
+                        /* background: crimson;after B5 ste-up then was removed & replaced at A9*/
+                        font-family: 'ubuntu', sans-serif ; 
+                         transition: all 0.3s ease; /*for A9 and scrollY fxn delay */
+                    }
+     
+        
         /* Porfolio navbar styling */
 
 /* to cause the navbar to stay put on scrolling the web page */
-.navbar.sticky  {
+/*A9*/.navbar.sticky  {
      padding: 15px 0;
-     background-color: crimson; /* background-color changes to: crimson; upon upper scroll*/
+     background-color: crimson; /* background-color changes to: crimson; upon upper scrollY*/
    
 }
-.navbar .max-width{
+/*A5*/.navbar .max-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.navbar .logo a{
+}   
+/*A3*/.navbar .logo a{
+   color: #fff;
     font-size: 35px;
-    font-weight: 600;
-    color: #fff;
+    font-weight: 600;    
 }
-.navbar .logo a span{
+/*A8*/.navbar .logo a span{
     color: crimson;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease;/*for A10 effect delay*/
+} 
+/*A10*/.navbar.sticky .logo a span{
+    color: #fff;/*Same effect as A9& scrollY func */
 }
-.navbar.sticky .logo a span{
-    color: #fff;/* changes span color to white upon scroll and back to crimson upon scroll release */
-}
-.navbar .menu li{
+/*A4*/.navbar .menu li{
     list-style:none;
     display: inline;/* to change how the listing should be displayed on the browser */
     float:none;/* takes content to the right position on the browser */
 }
-.navbar .menu li a{
+/*A2*/.navbar .menu li a{
     color: #fff;     
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;    
-    transition: color 0.3s ease;
+    transition: color 0.3s ease;/*for A7 effect*/
    
 }
-.navbar .menu li a:hover{
+/*A7 aftr B5*/.navbar .menu li a:hover{
     color: crimson;
 }
-.navbar.sticky .menu li a:hover{    
-    color: #fff;/* upon scroll no hover effect occurs */
+/*A11*/.navbar.sticky .menu li a:hover{    
+    color: #fff;/*displays no hover effect of A7 upon scrollY func */
 }
 
-/* Menu btn styling */
-.menu-btn{
-    color: #fff;
+/* Menu btn styling */ 
+/*A12*/.menu-btn{
+    color: rgba(7, 218, 91, 0.931);
     font-size: 23px;
     cursor: pointer;
-    display: none;
+    display: none;/*causes the menu btn to disapear*/
 }
 
 /* Homesection styling */
-.home{
+/*B0 bfore A7*/.home{
     display: flex;
-    background: url(../images/pitures_of_Me/Mario@GG.jpg) no-repeat center /* no repeat right moves the img to the right on the browser */;    
+    background: url(../images/pitures_of_Me/Mario@GG.jpg) no-repeat center /* no repeat right moves the img to the right on the browser */;
+    /*the forgoten properties: they prevent the img from scrolling-up!*/
+    background-size: cover; 
+    background-attachment: fixed;   
     width: 1000Px;    
     height: 100vh;
     /* min-height: 500px; */
     color: #fff;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Ubuntu', sans-serif;
 }
-.home .max-width{
+/*B1*/.home .max-width{
     margin: auto 0 auto 40px;/* moves the text in this class to the left */
 }
-.home .home-content .text1{
+/*B2*/.home .home-content .text1{
     font-size: 27px;/* increases the content at text1 */
 }
-.home .home-content .text2{
+/*B3*/.home .home-content .text2{
     font-size: 27px;/* increases the content at text2 */
     font-weight: 600;/* adds the boldness of the content at text2 */
     margin-left: -3px;/* takes content alitle bit to the left */
 }
-.home .home-content .text3{
+/*B4*/.home .home-content .text3{
     font-size: 40px;/* increases the content at text3 */
     margin: 5px 0;
 }
-.home .home-content .text3 span{
+/*B5*/.home .home-content .text3 span{
     color: crimson;
     font-weight: 500;
 } 
 
 /* hire me btn */
-.home .home-content a{
+/*B6 aftr @media D4*/.home .home-content a{
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -116,30 +123,30 @@
     margin-top: 20px;
     border-radius: 6px;
     border: 2px solid crimson;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease;/* for B7 effect*/
 }
-.home .home-content a:hover{
+/*B7*/.home .home-content a:hover{
     color: #fff;
     background: none;
 }
 
- /* ---------------about section styling ------------------*/
- section{
+ /*C0- about section styling ------------------*/
+ /*c4*/section{
     padding: 100px 0;
 }
-.about{
+/*c1 aftr @media 4d3*/.about{
     font-family: 'Poppins', sans-serif;
 }
-.about .title{
+/*c2*/.about .title{
     position: relative;
-    text-align: center;
+    text-align: center;/*aftr c3*/
     font-size: 40px ;
     font-weight: 500px;
     margin-bottom: 60px;
     padding-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif;/*c2 bftr c3*/
 }
-.about .title::before{
+/*c5*/.about .title::before{/*for the uberline in about section*/
     content: "";
     position: absolute;
     bottom: 0px;
@@ -147,9 +154,9 @@
     width: 180px;
     height: 3px;
     background: #111;
-    transform: translateX(-50%);
+    transform: translateX(-50%);/*takes the line frm above abt to underline abt.*/
 }
-.about .title::after{
+/*c6*/.about .title::after{/*for the "Who am i" text btwn the underline of about*/
     content: "Who am I";
     position: absolute;
     bottom: -12px;
@@ -160,22 +167,22 @@
     background: #fff;
     transform: translateX(-50%);
 }
-.about .about-content{
+/*c8 */.about .about-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
-.about .about-content .left{
+/*c7*/.about .about-content .left{
     width: 45%;
 }
-.about .about-content .left img{
+/*c3*/.about .about-content .left img{
     height: 400px;
     width: 400px ;
     object-fit: cover;
     border-radius:30px;
 }
-.about .about-content .right{
+/*c9*/.about .about-content .right{
     width: 55%;
 }
 .about .about-content .right .text{
@@ -218,44 +225,59 @@
 
 
 
-/* responsive media Querry start */
-@media(max-width: 1300px){
+/*D0- responsive media Querry start */
+@media(max-width: 1300px){ /*1 step*/
     .home .max-width{
     margin-left: 0px;/* moves the text in this class to the left */
     }
 }
-@media(max-width: 1104px){
+/*D2*/@media(max-width: 1104px){
     .about .about-content .left img{
         height: 350px;
         width: 350px ;
-        
+        /*1d1 ws now placed here! then media chnge to 991px*/
     }
 }
 
-@media(max-width: 991px){/* for navbar content and btn icon */
-    .max-width{
+/*D1 after A12*/@media(max-width: 991px){/* for navbar content and btn icon waschanged to 947 aftr 4d1 */
+   /*1d1*/ .max-width{
         padding: 0 50px;
     }
-    /* .navbar .menu{
+    /*5d1 aftr it ws chngd to 947 .menu-btn{ 
+        display: block;
+        z-index: 999;  to display the menu-bar
+    }*/
+    /*7d1*/.menu-btn i.active:before{
+            content: "\f00d ";
+    }
+    /*2d1*/ .navbar .menu{
         position: fixed;  
         height: 100vh;
         width: 100%;
-        left:0;
-        top: 0; */
-        /* background: #111;
-        text-align: center;for navbar menu li a still @media 991px */
-        /* padding-top:80px;for navbar menu li a still @media 991px */
-        /* tra
-        nsition: all 0.3s ease;it is going to cause the js menu-side bar to use 0.3s to display */
-    /* } */
-    /* .navbar .menu li{
-        display: block;
+        left:0%;/* at 6d1 were left ws givn -100%*/
+        top: 0; 
+         background: #111;
+        text-align: center;/*this align brought the inline-block menu li items that was to the LHS to center with the respected margin and fontsize. for 4d1 effect
+         */
+         padding-top: 80px;/*this added sm padding to menu-li items and activated the hover effect*/
+         transition: all 0.3s ease;/*aftr 6d1 Js toggle response,it is going to cause the js menu-side bar to use 0.3s to display */}
+    /*6d1*/.navbar .menu.active{
+            left: 0;
     }
-    .navbar .menu li a{
+     /*3d1*/.navbar .menu li{
+        display: block; /*keeps the menu items in the middle*/
+    }
+    /*4d1*/.navbar .menu li a{
         display: inline-block;
         margin: 20px 0;
-        font-size: 25px;
-    } */
+        font-size: 25px;/*It makes those menu-items spaceout still in the middle*/
+    } 
+    /*8d1*/.home .home-content .text2{/* this is the section that causes the navbar to disapppear */
+        font-size: 70px;/* increases the content at text2 */
+            }
+    /*9d1*/.home .home-content .text3{
+        font-size: 35px;/* increases the content at text3 */   
+        }
 }
 
 @media(max-width: 947px){/* for button and dropdown btn */
@@ -290,14 +312,14 @@
         display: inline-block;
         margin: 20px 0;
         font-size: 25PX;
-    }
+   }
     .home .home-content .text2{/* this is the section that causes the navbar to disapppear */
     font-size: 70px;/* increases the content at text2 */
         }
 .home .home-content .text3{
     font-size: 35px;/* increases the content at text3 */   
-    }
-    .home .home-content a{
+    } /*cut frm here*/
+   /*10d1*/ .home .home-content a{
         font-size: 23px;
         padding: 10px 30px;
     } 
@@ -323,23 +345,23 @@
 }
 
 
-@media(max-width: 690px){/* for margin at screen 690 */
+/*D3*/@media(max-width: 690px){/* for margin at screen 690 */
     .max-width{
         padding: 0 23px;
     }
     .home .home-content .text2{
     font-size: 60px;/* increases the content at text2 */
         }
-        .home .home-content .text3{
+      /*aftr 9d1*/  .home .home-content .text3{
     font-size: 32px;/* increases the content at text2 */
         }
-        .home .home-content a{
+      /*4d3*/  .home .home-content a{
             font-size: 20px;
             /* padding: 9px 25px; */
         }
      
     }
-   @media(max-width: 500px){   /* zooms-out text2 */   
+   /*D4*/@media(max-width: 500px){   /* zooms-out text2 */   
     .home .home-content .text2{
     font-size: 50px;/* increases the content at text2 */
         } 
@@ -347,4 +369,3 @@
     font-size: 27px;/* increases the content at text2 */
         }
     } 
-   

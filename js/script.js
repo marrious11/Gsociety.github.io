@@ -1,16 +1,15 @@
-$(Document).ready(function(){
-    "use trick";
-    $(window).scroll(function(){
+$(document).ready(function(){//aftr A5 plus jQury lnk
+     $(window).scroll(function(){
         if(this.scrollY > 20){
-            $('.navbar').addclass("sticky");
+            $('.navbar').addClass("sticky");// styleA9 effect
         }else{
-            $('.navbar').removeclass("sticky");/* changes color upon scroll */
+            $('.navbar').removeClass("sticky");/* changes color upon scroll */
         }
     });
-    // Toggle menu/navbar script
+    // Toggle menu/navbar script aftr 6d1 @media response 
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");/* it has to show menu-side btn onto the display in the mobile mode */
-        $('.menu-btn i').toggleClass("active");/* This action enables one to be able to cancel the menu-side bar in the mobile mode */
+        $('.menu-btn i').toggleClass("active");/* for 7d1 response.  This action enables one to be able to cancel the menu-side bar in the mobile mode */
     });
 });
 /* Form functionallity */
