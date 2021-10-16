@@ -1,145 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My site!</title>
-    <!--external css linkinng-->
-    <link rel="stylesheet" href="./css/index.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font.awesome/4.7.0/css/font-awesome.min.css"> -->
-     
-        <!-- Latest compiled and minified CSS -->
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-
-        <!-- jQuery library -->
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-        <!-- Popper JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-        
-        <!-- Latest compiled JavaScript -->
-        <script src="js/caroufredsel.js" type="text/javascript"></script><!--external JS linking-->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <!-- favicons; browser tabs icons -->
-    <link rel="icon" type="image/png" href="./images/LogoSize_Favicon.ico/logo_size.jpg" sizes="32x32">
+    <title>My Porfolio</title>
+   <link rel="stylesheet" href="../css/Porfolio.css" type="text/css"> 
+   <!-- even here too !!..fonts awesome fonts 5--> 
+   <!--A0 --> <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- after style A8-jQuerry link is to be placed here!-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   
 </head>
-<body >
+<body>
+    <!--A- nav.classname for auto gen,, an elmt wth a class -->
+   <!--A--> <header>
+        <nav class="navbar">
+            <div class="max-width">
+                <div class="logo"> <a href="#">Portfo<span>lio.</span></a></div>       
+                <!-- ul.classname>li*6>a to gen an ul with a class,six listitems and 6 links -->
+                <ul class="menu ">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="Myblog.html">Teams</a></li>
+                    <li><a href="form1.html">Contact</a></li>
+                </ul>
+                <!--to fix style-A11 efect--><div class="menu-btn">
+                     <i class="fas fa-bars"></i> <!-- used to create a menu-side btn-->
+                </div>
+           </div>
+        </nav>
+    </header>
+    <!-- Home section start -->
+ <!--B--> <main>
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text1">Hello my name is</div>
+                <div class="text2">Mario Godson</div>
+                <div class="text3">And I'm a <span>Programmer</span></div> 
+               <!--aftr style media D4--> <a href="">Hire me</a>                 
+                
+            </div>
+        </div>
+    </section>
+    <!--Bsub-a input some text on the porfolio -->
+    <p>The pain itself is a lot more interesting Some of us must accept our pleasures, and if this distinction is to be chosen from the labor of pleasures, let it escape from the flattery of those accusing us, and forsake the resultant sorrow of the corrupted admirers. You encounter the truth.</p>
+   <!-- about section start -->
+<!-- after @media 4d3 -->
+   <section class="about" id="about">
+    <div class="max-width">
+        <h2 class="title">About Me</h2>
+        <div class="about-content">
+           <div class="column left">
+               <img src="../images/pitures_of_Me/Mario@GG.jpg" alt="">
+           </div>
+           <div class="column right"><!--after C6 style-->
+               <div class="text">I'm Mario and I'm a <span>Programmer</span></div>
+               <p>The pain itself is a lot more interesting The pain and the pain are the consequences to anyone accusing him of hate and pain, for whatever reason pleases them. He is obliged to take the matter, for in the time of his body, to obtain it or to be avoided, it pleases him to endure the pain of the corrupt, and at other times, by the right of life, unless I will openly pardon most of all by reason, never toil for the pleasures of his duties.</p>
+               <a href="mario-me.html">Download CV</a>
+           </div>
+        </div>
+    </div>
+</section>
+    <!-- *********Servicessection start*********** -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">My Services</h2>
+            <div class="serv-content">
+              <div class="card">
+                  <div class="box">
+                      <i class="fas fa-paint-brush"></i><!-- didn't display!! -->
+                      <div class="text">Wed Design</div>
+                      <p>The pain itself is a lot more interesting The system will be displayed.</p>
+                  </div>
+              </div>
 
-    <header>
-        <div class="container">
-            <div class="row">
-                <a href="" class="logo"><img src="./images/pictures_of AA_web dev/AA_logo sample.jpg" alt="" width="300px", height="200px" ></a>
-               <!--navigation bar-->
-                <nav>
-                   <ul>
-                       <!--now i wish to open up my link on a new tab so i use target="_blank attribute"-->
-                       <li><a href="https://www.vfairs.com" target="_blank" >Home</a></li><!--EXTERNAL linking-->                       
-                       <li><a href="slider.html" target="_blank">Services</a></li>
-                       <li><a href=""target="_blank">Work</a></li><!--local linking-->
-                       <li><a href="Porfolio.html" target="_blank">Clients</a></li>
-                       <li><a href="Myblog.html" target="_blank">Visit Our Blog</a></li>
-                       <li><a href="form1.html" target="_blank">Login</a></li>
-                   </ul>
-               </nav> 
+              <div class="card">
+                <div class="box">
+                    <i class="fas fa-chart-line"></i><!-- didn't display!! -->
+                    <div class="text">Advertising</div>
+                    <p>The pain itself is a lot more interesting The system will be displayed.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <i class="fas fa-code"></i><!-- didn't display!! -->
+                    <div class="text">Apps Design</div>
+                    <p>The pain itself is a lot more interesting The system will be displayed.</p>
+                </div>
             </div>
             
+            </div>
         </div>
-    </header>
-    <!--making sliders   -->
-<section class="slider"> <!--first slider-->
-    <ul class="slider-carousel" id="slider-carousel">
-     <li class="img1" >
-        <h2>BEAUTIFIED BUSINESS <span>TEMPLATE </span></h2>
-        <P>We believe in creativity always</P>
-        <i class="fa fa-apple"></i>
-        <i class="fa fa-android"></i>
-        <i class="fa fa-windows"></i>
-        <p><br>
-            Who is such a man as does not want to get success life isn't  that what life is meant for? Work is life. If<br>
-            work is gone, health is gone. And if character is gone in addition to work, then get it that everything is gone;<br>
-            Your work is going to fill a large part of your life, and the only way to be satisfied is to do what you <br>
-            believe is great work.And the only way to do great work is to love what you do. If you haven't found it yet,<br>
-            keep looking. And as it all matters with the heart, you'll know it when you find it.
-             <i style="color: pink;">Steve Jobs.</i><br>
+    </section>
+   </main>
+  <!--C--><footer>
 
-        </p> <br>
-        <!--Various predefined button styles-->
-        <a href="" class="btn btn-success" >Get Started</a>
-        <a href="" class="btn btn-secondary" >Buy now</a><br><br><br>
-    </button>
+   </footer>
+    <script src="../js/script.js" type="text/javascript">//atftr jQuery link and A5 style</script>
     
-     </li><hr><marquee><span style="color: springgreen;">
-        <b>Stay Hungry for Tech and Don't Settle! The Allbright-Academy got your back</b>
-    </span></marquee><hr>
-     <!--Second slider-->
-        <li class="img2">
-          <h2>EXPLORE THE POWER OF <span>TECHNOLOGY</span></h2>
-          <P>Act quickly and Respond quickly </P>
-          <i class="fas fa-signal-1    "></i>
-          <i class="fas fa-signal-2    "></i>
-          <i class="fas fa-signal-3    "></i>
-          <p><br>
-            No big deal. Connecting the dots and trust it would all work out ok, though one might<br>see 
-            it to be pretty complicated for such a simple thing(web.Programming).You've got to trust in something<br>
-            Your gut, destiny, life, karma, whatever because believing that the the dots will connect down the road<br>
-            will give you the confidence to follow your heart even when it leads you off the well-worn path and that<br>
-            make all the defference. To be lucky you've got to find what you love to do early in life.
-        </p><br>
-        <!--Various predefined button styles-->
-        <a href="" class="btn btn-warning">AA-Holiday Tech Training</a>
-        <a href="" class="btn btn-info">Come to Class</a><br>
-        &nbsp;<br>
-        <details style="color: black; box-sizing: content-box;">
-            <summary style="border-radius: 60%;padding: 30px 30px; background: salmon;">Watch this cool song</summary>
-                <video src="./videos/Annie (2014) - Tomorrow Scene (49)  Movieclips 360 x 640.mp4"controls width="200px" height="150px">                        
-                </video>
-        </details>
-    
-        </li><hr style="position: unset;"></button><marquee><span style="color: springgreen;"><b>Stay Hungry for Tech and Don't Settle!</b></span></marquee><hr>
-        <!--Third slider-->
-        <li class="img3">
-            
-            <h2>HOLIDAY TECH <span>TRAINING</span></h2>
-            <P>Where are the engineers? Where are the people to change our country with technology?</P>
-            <i class=""></i>
-            <i class="fas fa-signal-3    "></i>
-            <i class="fas fa-signal-3    "></i>
-            <p><br>
-                The Allbright Academy has just started today with just two people. Come join us now so that in some 5 to 10 <br>
-                years to come, it should have grown from a two people into some $billion dollar company with over some<br>
-                thousands employees. The heaviness of being successfull is replaced by the lightness of being a beginner <br>
-                less you're sure about everything <i> Sometimes life is going to hit you in the head with a brick, but <br>             
-                I encourage you don't lose faith. Just love what you do and you've got to find what you love<b> <i>Steve Jobs</b></i><br>
-            </p><br>
-       
-        </li>
-        <hr> </button><marquee direction="left"><span><b>Stay Hungry for Tech and Don't Settle!</b></span></marquee><hr>
-        <br>
-        <marquee behavior="center" direction="right"><hr style="width: fit-content;">
-            <a href="https://youtu.be/keJn4LSNuHk"><i class="fa fa-download" aria-hidden="true">Remember to inspect this code and  Download this amazing html practical video</i></a><hr style="width: fit-content;behavior: inherit;">
-    </ul>
-          
-            <br>
-          </marquee> 
-</section><br>
-<!--another Js external link-->
-<script src="js/main.js" type="text/javascript" ></script>
-
-<!--PHP link to other pages-->
-              <button type="button" onclick="window.location.href = 'file.php'" class="btn btn-primary">
-                Go to PHP file</button>
-            <br>
-            &nbsp;
-           
-            &nbsp; 
-           
-            <!--To avoid scroll down ur page to view your rescent update use this div style to view ur page at the center--> 
-            
-            <div style="margin-top:500px"></div>
-             <!-- including videos on website using iframe -->
-               
+    <div style="margin-top: 10px;"></div>
 </body>
 </html>
